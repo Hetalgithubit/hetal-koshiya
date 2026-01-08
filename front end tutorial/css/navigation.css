@@ -1,0 +1,19 @@
+.a {
+    padding: 10px;
+    background-color: gray;
+    list-style: none;
+    margin: 0;
+}
+
+.b {
+    display: inline;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+/* hover effect */
+.b:hover {
+            background-color: rgb(8, 74, 174);
+            transition: 2s;
+        }
+

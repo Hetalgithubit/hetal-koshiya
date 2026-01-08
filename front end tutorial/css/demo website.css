@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(0,0,0,0.7),rgba(0,0,0,0.7)url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav.right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-right select {
+    padding: 6px;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-right select {
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    border: none;
+}
+
+.signin{
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* email box */
+.email-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email-box input {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.email-box button {
+    padding: 15px 25px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+/* trending */
+.trending {
+    padding: 40px;
+}
+
+.trending h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.trending-row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    position: relative;
+    min-width: 200px;
+}
+
+.card img {
+    width: 200px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.rank {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+/* reasons */
+.reasons {
+    padding: 40px;
+}
+
+.reason h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.reason-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.reason-card {
+    background: linear-gradient(180deg,#1a1a3a,#12091f);
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 180px;
+}
+
+.reason-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.reason-card p {
+    font-size: 15px;
+    color: #cfcfcf;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.faq {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.faq h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* FAQ Item */
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    background: #303030;
+    padding: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item label span {
+    font-size: 35px;
+}
+
+/* Answer */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    background: #303030;
+    transition: max-height 0.4s ease;
+}
+
+.answer p {
+    padding: 20px;
+    font-size: 18px;
+    border-top: 1px solid black;
+}
+
+/* Toggle */
+.faq-item input:checked ~ .answer {
+    max-height: 300px;
+}
+
+.faq-item input:checked + label span {
+    transform: rotate(45deg);
+}
+
+/* Email Section */
+.email-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.email-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email-box input {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.email-box button {
+    padding: 15px 25px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.email-area p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.email-box {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email-box input {
+    width: 350px;
+    padding: 16px;
+    background: black;
+    border: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+.email-box button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 16px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* call */
+.call {
+    margin: 20px 0;
+}
+
+.call a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+/* links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* languages */
+.language {
+    background: black;
+    color: white;
+    border: 1px solid #555;
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+
+/* country */
+.country {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* capcha */
+.capcha {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.capcha a {
+    color: #0071eb;
+}
+

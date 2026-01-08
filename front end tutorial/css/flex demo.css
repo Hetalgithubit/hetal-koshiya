@@ -1,0 +1,26 @@
+.outer {
+    width: 80%;
+    height: 400px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;   /* main center horizontally */
+    align-items: center;       /* main center vertically */
+}
+
+.main {
+    width: 80%;
+    height: 250px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-wrap: wrap;                 /* 2 rows mate */
+    justify-content: space-evenly;   /* side + vachche same space */
+    align-content: space-evenly;     /* upar niche row spacing */
+}
+
+.a, .b, .c, .d, .e, .f {
+    width: 25%;
+    height: 60px;
+    border: 2px solid black;
+}
