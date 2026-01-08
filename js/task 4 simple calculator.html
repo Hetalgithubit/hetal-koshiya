@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <script>
+    
+        function calculate(operation) {
+            let a = 20;
+            let b = 10;
+            let result;
+
+            if (operation === 'add') {
+                result = a + b;
+            } 
+            else if (operation === 'sub') {
+                result = a - b;
+            } 
+            else if (operation === 'mul') {
+                result = a * b;
+            } 
+            else if (operation === 'div') {
+                result = a / b;
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>javascript operators</h1>
+    <h1 id="result"></h1>
+
+    <button onclick="calculate('add')">Addition</button>
+    <button onclick="calculate('sub')">Subtraction</button>
+    <button onclick="calculate('mul')">Multiplication</button>
+    <button onclick="calculate('div')">Division</button>
+
+    
+</body>
+</html>

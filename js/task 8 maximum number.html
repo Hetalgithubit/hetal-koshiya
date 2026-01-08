@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Number</title>
+
+    <script>
+        function test() {
+            let a = Number(document.getElementById("a1").value);
+            let b = Number(document.getElementById("b1").value);
+            let c = Number(document.getElementById("c1").value);
+
+            let result = "";
+            if (a == b && b == c) {
+                result = "All numbers are same";
+            }
+            else if (a >= b && a >= c) {
+                result = "A is maximum: " + a;
+            } 
+            else if (b >= a && b >= c) {
+                result = "B is maximum: " + b;
+            } 
+            else {
+                result = "c is maximum: " + c;
+            }
+            
+
+            document.getElementById("b").innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Maximum Number Checking</h1>
+
+    <h2 id="b"></h2>
+
+    <input type="text" id="a1">
+    <input type="text" id="b1">
+    <input type="text" id="c1">
+
+    <br><br>
+    <button onclick="test()">Submit</button>
+</body>
+</html>

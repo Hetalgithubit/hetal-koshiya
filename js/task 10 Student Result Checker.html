@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Checker</title>
+</head>
+<body>
+
+<h2>Student Result Checker</h2>
+
+<!-- User Inputs -->
+Enter Subject 1 Marks: <input type="number" id="m1"><br><br>
+Enter Subject 2 Marks: <input type="number" id="m2"><br><br>
+Enter Subject 3 Marks: <input type="number" id="m3"><br><br>
+Enter Subject 4 Marks: <input type="number" id="m4"><br><br>
+Enter Subject 5 Marks: <input type="number" id="m5"><br><br>
+
+<button onclick="checkResult()">Submit</button>
+
+<h3 id="output"></h3>
+
+<script>
+function checkResult() {
+
+    // User pase thi value leva
+    let marks = [
+        Number(document.getElementById("m1").value),
+        Number(document.getElementById("m2").value),
+        Number(document.getElementById("m3").value),
+        Number(document.getElementById("m4").value),
+        Number(document.getElementById("m5").value)
+    ];
+
+    let total = 0;
+
+    // FOR LOOP – total marks
+    for (let i = 0; i < marks.length; i++) {
+        total = total + marks[i];
+    }
+
+    let percentage = total / marks.length;
+    let result = "";
+    let grade = "";
+
+    // IF ELSE – pass / fail
+    if (percentage >= 35) {
+        result = "PASS";
+
+        if (percentage >= 85) {
+            grade = "A";
+        } else if (percentage >= 70) {
+            grade = "B";
+        } else if (percentage >= 50) {
+            grade = "C";
+        } else {
+            grade = "D";
+        }
+    } else {
+        result = "FAIL";
+        grade = "No Grade";
+    }
+
+    // Output
+    document.getElementById("output").innerHTML =
+        "Total Marks: " + total + "<br>" +
+        "Percentage: " + percentage.toFixed(2) + "%<br>" +
+        "Result: " + result + "<br>" +
+        "Grade: " + grade;
+}
+</script>
+
+</body>
+</html>

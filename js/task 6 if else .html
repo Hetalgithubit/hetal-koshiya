@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(){
+           let a = Number(document.getElementById("a1").value);
+           let b = Number(document.getElementById("b1").value);  
+           if(a < b){
+            document.write("b is maximum");
+           }
+           else{
+            document.write("a is maximum");
+           }
+        }
+        document.getElementById("b").innerHTML = result;
+    </script>
+</head>
+<body>
+    <h1>check if else condition.</h1>
+    <h1 id = "b"></h1>
+    <input type = "text" id = "a1">
+    <input type = "text" id = "b1">
+    <button onclick="test()">Submit</button>
+</body>
+</html>

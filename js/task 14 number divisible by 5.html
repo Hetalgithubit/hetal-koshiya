@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers divisible by 5</title>
+    <script>
+        function division() {
+            let result = "";
+
+            for (let i = 1; i <= 50; i++) {
+                if (i % 5 === 0) {   
+                    result += i + " ";
+                }
+            }
+
+            document.getElementById("b").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Numbers divisible by 5 (1 to 50)</h2>
+    <h2 id="b"></h2>
+
+    <button onclick="division()">Submit</button>
+
+</body>
+</html>

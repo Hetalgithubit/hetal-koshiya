@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login data</title>
+
+    <script>
+        function checkLogin() {
+
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let result = "";
+
+            let emailValid = email.includes("@");
+            let passwordValid = password.length >= 8;
+
+            if (email === "" || password === "") {
+                result = "Please fill both fields";
+            }
+            else if (!emailValid && !passwordValid) {
+                result = "Both email and password are wrong";
+            }
+            else if (!emailValid) {
+                result = "Email is wrong";
+            }
+            else if (!passwordValid) {
+                result = "Password must be at least 8 characters";
+            }
+            else {
+                result = "Login successful ✅";
+            }
+
+            document.getElementById("b").innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return false;">
+        <h3>Login and Signup</h3>
+
+        <label>Email-id:</label>
+        <input type="email" id="email" placeholder="Enter email"><br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password"><br><br>
+
+        <button type="button" onclick="checkLogin()">Login</button>
+
+        <h2 id="b"></h2>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script>
+        function test() {
+            let text = "";
+
+            for (let i = 1; i < 10; i++) {
+                text += i + " ";
+            }
+
+            document.getElementById("b").innerHTML = text;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="b"></h1>
+    <button onclick="test()">Submit</button>
+</body>
+</html>

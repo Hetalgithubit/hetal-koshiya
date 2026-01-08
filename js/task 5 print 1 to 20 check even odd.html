@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd Program</title>
+
+    <script>
+        function test() {
+            let result = "";
+
+            for (let i = 1; i <= 20; i++) {
+                if (i % 2 === 0) {
+                    result += i + " = Even number<br>";
+                } else {
+                    result += i + " = Odd number<br>";
+                }
+            }
+
+            document.getElementById("b").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Even & Odd Numbers </h1>
+    <h3 id="b"></h3>
+
+    <button onclick="test()">Submit</button>
+
+</body>
+</html>

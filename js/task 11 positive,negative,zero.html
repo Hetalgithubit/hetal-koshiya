@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive, Negative or Zero</title>
+
+    <script>
+        function checkNumber() {
+
+            let input = document.getElementById("numbers").value;
+            let arr = input.split(",");
+            let output = "";
+
+            for (let i = 0; i < arr.length; i++) {
+                let num = Number(arr[i]);
+
+                if (num > 0) {
+                    output += num + " is Positive <br>";
+                }
+                else if (num < 0) {
+                    output += num + " is Negative <br>";
+                }
+                else {
+                    output += num + " is Zero <br>";
+                }
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Positive, Negative or Zero Number Checker</h2>
+
+    <input type="text" id="numbers"/>
+    <br><br>
+
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+
+</body>
+</html>

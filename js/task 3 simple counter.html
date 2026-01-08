@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<script>
+     var c = 0;
+     function inc(){
+        c++;
+        document.getElementById("count").innerHTML = c;
+     }
+
+     function dec(){
+        c--;
+        document.getElementById("count").innerHTML = c;
+     }
+</script>
+<body>
+    <h2>counter</h2>
+
+    <h1 id="count">0</h1>
+
+    <button onclick="inc()">+</button>
+    <button onclick="dec()">-</button>
+</body>
+</html>

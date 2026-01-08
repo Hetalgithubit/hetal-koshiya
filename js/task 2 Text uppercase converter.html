@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text uppercase convertor</title>
+    <script>
+       function convert() {
+          var data = document.getElementById("txt").value;
+          document.getElementById("show").innerHTML = data.toUpperCase();
+}
+    </script>
+</head>
+<body>
+    <h2>Uppercase Converter</h2>
+
+           <input type="text" id="txt">
+           <button onclick="convert()">Convert</button>
+
+    <p id="show"></p>
+</body>
+</html>
