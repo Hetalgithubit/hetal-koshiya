@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input by id into span</title>
+    <script>
+        function showValue() {
+            let value = document.getElementById("MyInput").value;
+            document.getElementById("result").innerText = value;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="MyInput" placeholder="Enter text">
+    <button onclick="showValue()">Show</button><br><br>
+    <span id="result"></span>
+
+</body>
+</html>
