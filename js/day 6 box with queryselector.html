@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add border to all .box Elements</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 80px;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightcoral;
+        }
+    </style>
+
+    <script>
+        function addBorder (){
+            const boxes = document.querySelectorAll(".box");
+
+            boxes.forEach(function(box){
+                box.style.border = "2px solid black";
+            });
+        }
+    </script>
+</head>
+<body>
+     
+    <h2>Example: Add Border using Javascript</h2>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <button onclick="addBorder()">Add Border</button>
+</body>
+</html>

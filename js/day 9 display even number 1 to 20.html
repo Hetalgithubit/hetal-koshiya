@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Even Numbers 1 to 20</title>
+
+    <script>
+        function evenNumber() {
+            let result = "";
+
+            for (let i = 1; i <= 20; i++) {
+                if (i % 2 === 0) {
+                    result += i + "<br>";
+                }
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Display Even Numbers from 1 to 20</h2>
+
+    <button onclick="evenNumber()">Even Numbers</button>
+
+    <p id="output"></p>
+
+</body>
+</html>

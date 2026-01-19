@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorAll method with paragraph</title>
+</head>
+<body>
+
+<h1>paragraph with querySelectorAll method</h1>
+
+<div id="MyDIV" style="border: 2px solid black; padding:10px;">
+    <p class="example">I am Hetal Koshiya</p>
+    <p class="example">I am studying BTech (Information Technology).</p>
+    <p class="example">My skills are HTML, CSS, and JavaScript.</p>
+    <p class="example">I am studying at Silver Oak University.</p>
+    <p class="example">My goal is to become a Full Stack Developer.</p>
+</div>
+
+<script>
+    const element = document.getElementById("MyDIV");
+    const list = element.querySelectorAll(".example");
+
+    for (let i = 0; i < list.length; i++) {
+        list[i].style.backgroundColor = "red";
+        list[i].style.color = "white";
+    }
+</script>
+
+</body>
+</html>

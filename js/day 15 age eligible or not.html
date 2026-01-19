@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Eligibility Check</title>
+
+    <script>
+        function checkEligibility() {
+            
+            let age = document.getElementById("age").value;
+            age = Number(age);
+
+            if (age < 18) {
+                document.getElementById("result").innerHTML = "Not eligible";
+            } else {
+                document.getElementById("result").innerHTML = "Eligible";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Check Eligibility by Age</h2>
+
+    <input type="number" id="age" placeholder="Enter your age">
+    <br><br>
+
+    <button onclick="checkEligibility()">Check</button>
+
+    <p id="result"></p>
+
+</body>
+</html>

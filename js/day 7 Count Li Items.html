@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Li Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        #result {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+
+    <script>
+        function countLi(){
+            const items = document.querySelectorAll("li");
+            document.getElementById("result").innerText = "Total number of <li> items: " + items.length;
+        }
+    </script>
+</head>
+<body>
+    
+    <h2>Count &lt;li&gt Items using querySelectorAll()</h2>
+
+    <ul>
+        <li>Html</li>
+        <li>css</li>
+        <li>Javascript</li>
+        <li>React</li>
+        <li>Node.js</li>
+    </ul>
+
+    <button onclick="countLi()">Count List Items</button>
+
+    <p id="result"></p>
+</body>
+</html>
